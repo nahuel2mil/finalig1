@@ -1,3 +1,61 @@
+.container{
+  background-color: #005C53;
+}
+
 .footerindex{
 	background-image: url(../images/fondoxp.jpg);
+}
+
+.tierra {
+  max-height: 25vh; /* No será más alta que el 50% de la pantalla */
+  width: auto; /* Mantiene la proporción */
+}
+
+
+.headerfondo{
+  background-image: url(../medioambiente/images/mfondo.jpg);
+  background-size: cover; /* Para que cubra el div */
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+}
+#carouselExampleCaptions {
+  width: 1000px;
+  height: 800px;
+  margin: auto; /* Para centrar */
+}
+
+#carouselExampleCaptions .carousel-inner,
+#carouselExampleCaptions .carousel-item {
+  width: 1000px;
+  height: 800px;
+}
+
+#carouselExampleCaptions img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+
+.headercuidemos{
+  background-image: url(../cuidemoselplaneta/images/cuidemoselplanetabanner.jpg);
+  background-size: cover; /* Para que cubra el div */
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+}
+.headercambioclimatico{
+  background-image: url(../elcambioclimatico/images/bannercambioclimatico.jpg);
+  background-size: cover; /* Para que cubra el div */
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+}
+.headerescuela{
+  background-image: url(../escuelasustentable/images/escuelaverde.jpg);
+  background-size: cover; /* Para que cubra el div */
+  background-position: center;
+  height: 70vh;
+  width: 100%;
 }

@@ -3,25 +3,114 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <title>el cambio climatico y nosotros</title>
 </head>
-<body>
+<body class="container">
     <header>
-        <nav>
-            <ul></ul>
-            <ul></ul>
-            <ul></ul>
-            <ul></ul>
-            <ul></ul>
-            <ul></ul>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            
+                <a class="navbar-brand" href="../index.html">Ciberminis</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../medioambiente/index.html">¿Qué es el Medioambiente?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../cuidemoselplaneta/index.html">Cuidemos Nuestro Planeta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../elcambioclimatico/index.html">El Cambio Climático y Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../escuelasustentable/index.html">Mi Escuela Sustentable</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../juegosyretos/index.html">Juegos y Retos</a></li>
+                    </ul>
+                </div>
+            
         </nav>
-        <div>
-            <h1></h1>
-        </div>
-        <div>
-            <img src="">
+        <div class="d-flex align-items-center headercambioclimatico">
+            <div class="container" style="background-color: transparent !important;">
+            <h1 class="text-center text-white">"El clima de nuestro planeta está cambiando, y nosotros tenemos el poder de hacer algo al respecto. ¡Descubre qué es el cambio climático y cómo podemos ayudar!"</h1>
+            </div>
         </div>
     </header>
+    <main>
+        <div class="d-flex flex-column align-items-center text-center p-5">
+            <h1 class="col-8">¿Qué es el cambio climático?</h1>
+            <p class="col-8">
+            "El clima es el conjunto de condiciones como la temperatura, la lluvia y el viento que ocurren en un lugar durante mucho tiempo. Pero, en los últimos años, el clima de la Tierra ha cambiado más rápido de lo normal debido a la contaminación y el uso excesivo de recursos. A esto le llamamos cambio climático."</p>
+        </div>
 
+<!-- Botón para abrir el segundo modal -->
+    <div class="row justify-content-center p-5">
+        <button type="button" class="btn btn-primary col-4" data-bs-toggle="modal" data-bs-target="#miOtroModal">
+                EJEMPLO FACIL :D
+        </button>
+    </div>
+
+<!-- Segundo Modal con otro ID -->
+        <div class="modal fade" id="miOtroModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">cambio climático</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>🌱 Ejemplo fácil de entender: </h2>
+                        <p>"Piensa en la Tierra como una nevera. ❄️ Si dejamos la puerta abierta y entra mucho calor, la comida se echa a perder. Algo parecido pasa con nuestro planeta cuando la contaminación atrapa demasiado calor en la atmósfera."</p>
+                        <img src="images/comidapodrida.jpg" alt="comidapodrida" class="img-fluid">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- CARDS -->
+    <div class="row justify-content-around p-5">
+        <div class="card col-2" style="width: 18rem;">
+            <img src="images/efectoinvernadero.jpg" class="card-img-top" alt="efectoinvernadero">
+            <div class="card-body">
+                <h5 class="card-title">Efecto invernadero: </h5>
+                <p class="card-text">Los gases como el CO₂ atrapan el calor del Sol y hacen que la Tierra se caliente más.</p>
+                <a href="#" class="btn btn-primary">CLICK AQUI</a>
+            </div>
+        </div>
+
+        <div class="card col-2" style="width: 18rem;">
+            <img src="images/contaminacionauto.jpg" class="card-img-top" alt="contaminacionauto">
+            <div class="card-body">
+                <h5 class="card-title">Contaminación:</h5>
+                <p class="card-text">El humo de fábricas y autos ensucia el aire y contribuye al calentamiento.</p>
+                <a href="#" class="btn btn-primary">CLICK AQUI</a>
+            </div>
+        </div>
+
+        <div class="card col-2" style="width: 18rem;">
+            <img src="images/deforestacion.jpg" class="card-img-top" alt="deforestacion.jpg">
+            <div class="card-body">
+                <h5 class="card-title">Deforestación:</h5>
+                <p class="card-text">Al talar muchos árboles, el planeta pierde su capacidad de limpiar el aire.</p>
+                <a href="#" class="btn btn-primary">CLICK AQUI</a>
+            </div>
+        </div>
+
+        <div class="card col-2" style="width: 18rem;">
+            <img src="images/usoexcesivo.jpg" class="card-img-top" alt="usoexcesivo">
+            <div class="card-body">
+                <h5 class="card-title">Uso excesivo de recursos:</h5>
+                <p class="card-text">Consumimos más de lo que la Tierra puede reponer.</p>
+                <a href="#" class="btn btn-primary">CLICK AQUI</a>
+            </div>
+        </div>
+    </div>
+        
+    </main>
+    <footer>
+        
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
