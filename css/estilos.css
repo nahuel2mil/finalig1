@@ -26,6 +26,37 @@
     height: 100%;
     object-fit: cover; /* Ajusta la imagen sin deformarla */
 }
+/*estilos del juego*/
+body {
+    background-color: #e3f2fd;
+}
+
+.contenedor {
+    width: 150px;
+    height: 220px;
+    padding: 10px;
+    border: 2px dashed #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.contenedor img {
+    width: 100px;
+}
+
+.basura {
+    width: 90px;
+    cursor: grab;
+}
+
+.basura:active {
+    cursor: grabbing;
+}
+
 
 /* Media Query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
