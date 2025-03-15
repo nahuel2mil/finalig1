@@ -26,12 +26,12 @@ for (let i = 0; i < contenedores.length; i++) {
         let basuraElemento = document.querySelector(`#${basuraId}`);
 
         if (tipoBasura === tipoContenedor) {
-            // ✅ Correcto: La basura desaparece
+            // Correcto: La basura desaparece
             puntos += 10;
             basuraElemento.style.display = 'none'; // Ocultar basura
             alert('¡Correcto! Reciclaste bien.');
         } else {
-            // ❌ Incorrecto: No desaparece la basura
+            //  Incorrecto: No desaparece la basura
             alert('¡Error! Ese no es el contenedor correcto.');
         }
 
