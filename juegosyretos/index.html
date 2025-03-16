@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <title>juegos y retos</title>
 </head>
 <body class="container text-center">
@@ -28,36 +31,36 @@
         </nav>
         
         <!-- titulo-->
-        <div class="d-flex justify-content-center align-items-center w-100">
+        <div class="d-flex justify-content-center align-items-center w-100 mt-4">
             <div class="text-center text-white">
                 <h1>¡Vamos a aprender jugando! 🏡🌎</h1>
             </div>
         </div>
     </header>
     <main>
-        <h1 class="mb-4">Arrastra la basura al contenedor correcto</h1>
+        <h1 class="mb-4">Haz click en la basura que deseas reciclar y luego clickea su contenedor correcto</h1>
 
         <!-- Contenedores de reciclaje -->
         <div class="row justify-content-center">
-            <div class="col-3">
+            <div class="col-6 col-md-3">
                 <div class="contenedor" data-tipo="organico">
                     <img src="images/cestoorganico.jpg" alt="Contenedor Orgánico" class="img-fluid">
                     <p>Orgánicos</p>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-md-3">
                 <div class="contenedor" data-tipo="inorganico">
                     <img src="images/cestoinorganico.jpg" alt="Contenedor Inorgánico" class="img-fluid">
                     <p>Inorgánicos</p>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-md-3">
                 <div class="contenedor" data-tipo="reciclable">
                     <img src="images/cestoreciclable.png" alt="Contenedor Reciclable" class="img-fluid">
                     <p>Reciclables</p>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-md-3">
                 <div class="contenedor" data-tipo="no-reciclable">
                     <img src="images/cestonoreciclable.jpg" alt="Contenedor No Reciclable">
                     <p>No Reciclables</p>
@@ -66,57 +69,65 @@
         </div>
 
         <!-- Residuos para arrastrar -->
-<div class="row mt-4">
-    <div class="col-3">
-        <img src="images/banana.png" alt="Cáscara de Banana" class="basura" id="basura1" data-tipo="organico" draggable="true">
+<div class="articulo2">
+<div class="row mt-4 px-2">
+    <div class="col-3 ">
+        <img src="images/banana.png" alt="Cáscara de Banana" class="basura" id="basura1" data-tipo="organico">
     </div>
-    <div class="col-3">
-        <img src="images/botelladeplastico.jpg" alt="Botella Plástica" class="basura" id="basura2" data-tipo="reciclable" draggable="true">
+    <div class="col-3 ">
+        <img src="images/botelladeplastico.jpg" alt="Botella Plástica" class="basura" id="basura2" data-tipo="reciclable">
     </div>
-    <div class="col-3">
-        <img src="images/lataderefresco.jfif" alt="Lata de Refresco" class="basura" id="basura3" data-tipo="inorganico" draggable="true">
+    <div class="col-3 ">
+        <img src="images/lataderefresco.jfif" alt="Lata de Refresco" class="basura" id="basura3" data-tipo="inorganico">
     </div>
-    <div class="col-3">
-        <img src="images/pañalusado.jpg" alt="Pañal Usado" class="basura" id="basura4" data-tipo="no-reciclable" draggable="true">
-    </div>
-</div>
-<div class="row mt-4">
-    <div class="col-3">
-        <img src="images/manzanamordida.jpg" alt="Manzana Mordida" class="basura" id="basura5" data-tipo="organico" draggable="true">
-    </div>
-    <div class="col-3">
-        <img src="images/cartondeleche.jpg" alt="Cartón de Leche" class="basura" id="basura6" data-tipo="reciclable" draggable="true">
-    </div>
-    <div class="col-3">
-        <img src="images/bolsadeplastico.jfif" alt="Bolsa Plástica" class="basura" id="basura7" data-tipo="inorganico" draggable="true">
-    </div>
-    <div class="col-3">
-        <img src="images/colilladecigarrillo.png" alt="Colilla de Cigarrillo" class="basura" id="basura8" data-tipo="no-reciclable" draggable="true">
+    <div class="col-3 ">
+        <img src="images/pañalusado.jpg" alt="Pañal Usado" class="basura" id="basura4" data-tipo="no-reciclable">
     </div>
 </div>
-<div class="row mt-4">
+<div class="row mt-4 px-2">
     <div class="col-3">
-        <img src="images/hojassecas.png" alt="Hojas Secas" class="basura" id="basura9" data-tipo="organico" draggable="true">
+        <img src="images/manzanamordida.jpg" alt="Manzana Mordida" class="basura" id="basura5" data-tipo="organico">
+    </div>
+    <div class="col-3 ">
+        <img src="images/cartondeleche.jpg" alt="Cartón de Leche" class="basura" id="basura6" data-tipo="reciclable">
+    </div>
+    <div class="col-3 ">
+        <img src="images/bolsadeplastico.jfif" alt="Bolsa Plástica" class="basura" id="basura7" data-tipo="inorganico">
     </div>
     <div class="col-3">
-        <img src="images/papelperiodico.jpg" alt="Periódico" class="basura" id="basura10" data-tipo="reciclable" draggable="true">
+        <img src="images/colilladecigarrillo.png" alt="Colilla de Cigarrillo" class="basura" id="basura8" data-tipo="no-reciclable">
     </div>
-    <div class="col-3">
-        <img src="images/envasedefoam.png" alt="Envase de Foam" class="basura" id="basura11" data-tipo="inorganico" draggable="true">
+</div>
+<div class="row mt-4 px-2">
+    <div class="col-3 ">
+        <img src="images/hojassecas.png" alt="Hojas Secas" class="basura" id="basura9" data-tipo="organico">
     </div>
-    <div class="col-3">
-        <img src="images/mascarillausada.png" alt="Mascarilla Usada" class="basura" id="basura12" data-tipo="no-reciclable" draggable="true">
+    <div class="col-3 ">
+        <img src="images/papelperiodico.jpg" alt="Periódico" class="basura" id="basura10" data-tipo="reciclable">
     </div>
+    <div class="col-3 ">
+        <img src="images/envasedefoam.png" alt="Envase de Foam" class="basura" id="basura11" data-tipo="inorganico">
+    </div>
+    <div class="col-3 ">
+        <img src="images/mascarillausada.png" alt="Mascarilla Usada" class="basura" id="basura12" data-tipo="no-reciclable">
+    </div>
+</div>
 </div>
         <button id="reiniciar" class="btn btn-primary mt-4">Reiniciar</button>
         <p id="puntos" class="mt-2">Puntos: 0</p>
-    </div>
-    </main>
-    <footer class="footergral">
-        <h3>Para saber mas de nosotros:</h3>
-        <a class="btn btn-primary" href="infoformulario.html" role="button">CONTACTANOS</a>
-    </footer>
 
+    </main>
+    <footer class="footergral p-3">
+        <h3>Para saber mas de nosotros:</h3>
+        <div class="contenedor-botones px-3">
+            <div class="p-3">
+                <a class="btn btn-success" href="../complementarias/contacto.html" role="button">CONTACTANOS</a>
+            </div>
+            <div class="p-3">
+                <a class="btn btn-success" href="../complementarias/quienessomos.html" role="button">QUIENES SOMOS</a>
+            </div>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <title>cuidemos el planeta</title>
 </head>
 <body class="container">
-    <header>
+    <header> 
 <!-- menu-->
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-3">            
                 <a class="navbar-brand" href="../index.html">Ciberminis</a>
@@ -27,17 +30,17 @@
                 </div>
         </nav>
 <!-- titulo-->
-        <div class="d-flex align-items-center p-3">
-            <h1 class="text-center text-white">Nuestro planeta es nuestro hogar. 🏡🌎 ¡Es hora de cuidarlo juntos! Descubre qué puedes hacer para proteger la naturaleza y ayudar a la Tierra a mantenerse saludable.</h1>
+        <div class="d-flex align-items-center p-3 ">
+            <h1 class="text-center text-white p-3 articulo1">Nuestro planeta es nuestro hogar. 🏡🌎 ¡Es hora de cuidarlo juntos! Descubre qué puedes hacer para proteger la naturaleza y ayudar a la Tierra a mantenerse saludable.</h1>
         </div>
     </header>
     <main>
 <!-- articulo1-->
-        <div class="row align-items-center p-3">
-            <h4>"Cada acción que hacemos tiene un impacto en la Tierra. Si reciclamos, ahorramos agua y cuidamos la naturaleza, nuestro planeta estará más limpio y sano. 🌿💧 Pero si contaminamos y desperdiciamos recursos, ponemos en riesgo el futuro. ¡Tú puedes ser parte del cambio!" </h4>
+        <div class="row align-items-center py-3 articulo2">
+            <h4 class="text-white">"Cada acción que hacemos tiene un impacto en la Tierra. Si reciclamos, ahorramos agua y cuidamos la naturaleza, nuestro planeta estará más limpio y sano. 🌿💧 Pero si contaminamos y desperdiciamos recursos, ponemos en riesgo el futuro. ¡Tú puedes ser parte del cambio!" </h4>
         </div>
 <!-- Botón para abrir el modal -->
-            <div class="row justify-content-center p-5">
+            <div class="row justify-content-center p-3">
                 <button type="button" class="btn btn-primary col-10 col-md-4" data-bs-toggle="modal" data-bs-target="#miModal">
                 EJEMPLO FACIL :D
                 </button>
@@ -63,10 +66,10 @@
         </div>
 <!-- titulos sobre cards  -->
         <div class="row justify-content-center text-center">
-            <h2 class="col-12 col-md-8 p-5">🚨 Peligros que afectan la Tierra: </h2>
+            <h2 class="col-12 col-md-8 p-3">🚨 Peligros que afectan la Tierra: </h2>
         </div>
 <!-- cards sobre problemas climaticos -->
-        <div class="row align-items-stretch justify-content-around">
+        <div class="row align-items-stretch justify-content-around py-3">
 
             <div class="card col-10 col-md-3 p-3 d-flex" style="width: 18rem; height: 100%;">
                 <img src="images/contaminaciondelaire.jpg" class="card-img-top" alt="contaminicaiondelaire">
@@ -99,7 +102,14 @@
 </main>
     <footer class="footergral">
         <h3>Para saber mas de nosotros:</h3>
-        <a class="btn btn-primary" href="infoformulario.html" role="button">CONTACTANOS</a>
+        <div class="contenedor-botones px-3">
+            <div class="p-3">
+                <a class="btn btn-success" href="../complementarias/contacto.html" role="button">CONTACTANOS</a>
+            </div>
+            <div class="p-3">
+                <a class="btn btn-success" href="../complementarias/quienessomos.html" role="button">QUIENES SOMOS</a>
+            </div>
+        </div>
     </footer>
 
 

@@ -3,42 +3,55 @@ const basuras = document.querySelectorAll('.basura');
 const contenedores = document.querySelectorAll('.contenedor');
 const puntosDisplay = document.querySelector('#puntos');
 let puntos = 0;
+let basuraSeleccionada = null;
+const sonido = new Audio("sonidos/wingame.mp3");
+const sonido1 = new Audio ("sonidos/pop.mp3");
+const sonido2 = new Audio ("sonidos/error.mp3")
 
-// Habilitar arrastrar los residuos
+// Hacer clic en la basura para seleccionarla
 for (let i = 0; i < basuras.length; i++) {
-    basuras[i].addEventListener('dragstart', function (e) {
-        e.dataTransfer.setData('tipo', basuras[i].getAttribute('data-tipo'));
-        e.dataTransfer.setData('id', basuras[i].id);
+    basuras[i].addEventListener('click', function () {
+        basuraSeleccionada = basuras[i];
     });
 }
 
-// Permitir soltar en los contenedores
+// Hacer clic en el contenedor para colocar la basura seleccionada
 for (let i = 0; i < contenedores.length; i++) {
-    contenedores[i].addEventListener('dragover', function (e) {
-        e.preventDefault();
-    });
+    contenedores[i].addEventListener('click', function () {
+        if (basuraSeleccionada) {
+            let tipoBasura = basuraSeleccionada.getAttribute('data-tipo');
+            let tipoContenedor = contenedores[i].getAttribute('data-tipo');
 
-    contenedores[i].addEventListener('drop', function (e) {
-        e.preventDefault();
-        let tipoBasura = e.dataTransfer.getData('tipo');
-        let tipoContenedor = contenedores[i].getAttribute('data-tipo');
-        let basuraId = e.dataTransfer.getData('id');
-        let basuraElemento = document.querySelector(`#${basuraId}`);
+            if (tipoBasura === tipoContenedor) {
+                // Correcto: La basura desaparece
+                
+                basuraSeleccionada.style.display = 'none'; // Ocultar basura
+                sonido1.play();
+                alert('¡Correcto! Reciclaste bien.');
+                sumarPuntos(10)
+            } else {
+                // Incorrecto: No desaparece la basura
+                sonido2.play()
+                alert('¡Error! Ese no es el contenedor correcto.');
+            }
 
-        if (tipoBasura === tipoContenedor) {
-            // Correcto: La basura desaparece
-            puntos += 10;
-            basuraElemento.style.display = 'none'; // Ocultar basura
-            alert('¡Correcto! Reciclaste bien.');
-        } else {
-            //  Incorrecto: No desaparece la basura
-            alert('¡Error! Ese no es el contenedor correcto.');
+            // Actualizar puntos
+            puntosDisplay.textContent = `Puntos: ${puntos}`;
+            // Resetear la selección
+            basuraSeleccionada = null;
         }
-
-        // Actualizar puntos
-        puntosDisplay.textContent = `Puntos: ${puntos}`;
     });
 }
+
+function sumarPuntos(cantidad) {
+    puntos += cantidad; // Sumar la cantidad de puntos
+
+    if (puntos >= 120) {
+        alert("¡Felicidades! Has alcanzado 120 puntos 🎉");
+        sonido.play(); // Reproducir el sonido
+    }
+}
+
 
 // Reiniciar el juego
 document.querySelector('#reiniciar').addEventListener('click', function () {

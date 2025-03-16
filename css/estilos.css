@@ -4,18 +4,47 @@
   background-size: cover; /* Para que cubra el div */
   background-position: center;
 }
+body {
+    font-family: "Play", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*articulo base gral*/
+.articulo1{
+    background-color: lightseagreen;
+    border-radius: 20px;
+    border: 2px solid darkgreen;
+}
+.articulo2{
+    background-color: #E8CE6F;
+    border-radius: 50px;
+}
+.articulo3{
+    background-color: #E8CC6F;
+    border-radius: 25px;
+    border:2px solid violet;
+}
+.articulo4{
+    background-color: #DCE86F;
+    border-radius: 25px;
+    border: 2px solid darkblue;
+}
+
 /*footer*/
 .footergral {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 150px;
     text-align: center;
     border: 2px solid yellow;
     border-radius: 15px;
-    background-color: lightgreen;
+    background-color: #E8DB6F;
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .contenedor-botones {
@@ -44,9 +73,6 @@
 }
 
 /*estilos del juego*/
-body {
-    background-color: #e3f2fd;
-}
 .contenedor {
     width: 150px;
     height: 220px;
@@ -60,13 +86,16 @@ body {
 .contenedor img {
     width: 100px;
 }
+.contenedor img:active{
+    border:2px solid red;
+}
 .basura {
     width: 90px;
-    cursor: grab;
 }
 .basura:active {
-    cursor: grabbing;
+    border: 2px solid red;
 }
+
 /*quienes somos*/
 .quienessomos{
     background-color: lightgoldenrodyellow;
